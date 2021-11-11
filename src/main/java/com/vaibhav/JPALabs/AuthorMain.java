@@ -18,27 +18,20 @@ public static void main(String[] args) {
 		EntityTransaction tr = em.getTransaction();
 		
 		tr.begin();
-		Author aut1 = new Author(101,"Vaibhav","Dilip","Sawant",987643535);
-		Author aut2 = new Author(102,"Sagar","Arun","Nitore",9805634);
-		Author aut3 = new Author(103,"Siddhesh",null,"Sawant",894656698);
-		Author aut4 = new Author(103,"Siddhesh",null,"Sawant",234634234);
-		Author aut5 = new Author(103,"Siddhesh",null,"Sawant",853512334);
-		// Inserting record  ---> After insertion we cannot again insert that record
-		em.persist(aut1);  //insert
+		Author aut1 = new Author(201,"Vaibhav","Dilip","Sawant",987643535);
+		Author aut2 = new Author(202,"Sagar","Arun","Nitore",9805634);
+		Author aut3 = new Author(203,"Siddhesh",null,"Sawant",894656698);
+		Author aut4 = new Author(204,"Rahul",null,"Shinde",234634234);
+		Author aut5 = new Author(205,"Harsh",null,"Rane",853512334);
+		
+		em.persist(aut1);  
 		em.persist(aut2);
 		em.persist(aut3);
 		em.persist(aut4);
 		em.persist(aut5);
 		
-//		em.remove(emp2);
-		
-		// Displaying record
-		Author aut = em.find(Author.class, 104);   //Select
+		Author aut = em.find(Author.class, 204);   //Select
 		System.out.println(aut.toString());
-		
-		// Updating record
-//		emp1.setFirstName("Vaib");
-//		em.merge(emp1);    //Update
 		
 		tr.commit();
 		System.out.println("End");

@@ -21,6 +21,10 @@ public class Author {
 //	@Column(name = "phone_no")
 	private long phoneNo;
 	
+	public Author() {
+		super();
+	}
+	
 	public Author(int authorId, String firstName, String middleName, String lastName, long phoneNo) {
 		super();
 		this.authorId = authorId;
