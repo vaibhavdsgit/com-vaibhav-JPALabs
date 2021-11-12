@@ -33,7 +33,7 @@ public static void main(String[] args) {
 //		em.persist(aut4);
 //		em.persist(aut5);
 		
-		AuthorDao adi = new AuthorDaoImplementation();
+		AuthorDaoImplementation adi = new AuthorDaoImplementation();
 		adi.addAuthor(aut6);
 //		Author aut = em.find(Author.class, 204);   //Select
 //		System.out.println(aut.toString());
