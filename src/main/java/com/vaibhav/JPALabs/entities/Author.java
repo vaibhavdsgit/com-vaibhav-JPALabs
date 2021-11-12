@@ -1,5 +1,6 @@
 package com.vaibhav.JPALabs.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -9,16 +10,16 @@ public class Author {
 	@Id
 	private int authorId;
 	
-	//@Column(name = "first_Name")
+	@Column(name = "first_name")
 	private String firstName;
 	
-	//@Column(name = "middle_Name")
+	@Column(name = "middle_name")
 	private String middleName;
 	
-	//@Column(name = "last_Name")
+	@Column(name = "last_name")
 	private String lastName;
 	
-//	@Column(name = "phone_no")
+	@Column(name = "phone_no")
 	private long phoneNo;
 	
 	public Author() {
